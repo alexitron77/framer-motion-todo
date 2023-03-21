@@ -1,0 +1,79 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  /* background: linear-gradient(180deg, #bea0d4 0%, rgb(199, 235, 255) 100%); */
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --coral: #ff7f50;
+  --coral-rgba-30: rgb(255, 127, 80, 0.3);
+  --coral-rgba-40: rgb(255, 127, 80, 0.4);
+  --white: #ffffff;
+}
+
+.example-container div {
+  background: white;
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50% - 150px / 2);
+  left: calc(50% - 150px / 2);
+}
+
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.create-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  background: var(--coral);
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  color: white;
+  font-weight: 600;
+  justify-content: center;
+  margin-left: 1vw;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between
+}
+
+.card-edit-btn {
+  margin-left: 10px;
+}
+
+.todo-container {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
