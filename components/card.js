@@ -3,6 +3,7 @@ import { Card, CardBody, Text } from '@chakra-ui/react';
 import { motion } from "framer-motion";
 import { useContext, useRef } from "react";
 import { TodoContext } from '../contexts/todoContext';
+import styles from "../styles/Card.module.scss";
 
 const CardComponent = ({ content }) => {
   const [todoList, setTodoList] = useContext(TodoContext)
@@ -45,12 +46,12 @@ const CardComponent = ({ content }) => {
 
   return (
     <motion.div variants={cardVariant} initial="initial" whileHover="hover">
-      <Card className="card" sx={{ "--card-bg": "none", "color": "none" }}>
-        <CardBody className="card-body">
+      <Card className={styles.card} sx={{ "--card-bg": "none", "color": "none" }}>
+        <CardBody className={styles.cardBody}>
           <Text ref={currentCardTitle}> {content} </Text>
           <motion.div variants={editButtonsVariant}>
-            <EditIcon className="card-edit-btn" onClick={() => editAction()} />
-            <DeleteIcon className="card-edit-btn" onClick={() => deleteAction()} />
+            <EditIcon className={styles.cardEditBtn} onClick={() => editAction()} />
+            <DeleteIcon className={styles.cardEditBtn} onClick={() => deleteAction()} />
           </motion.div>
         </CardBody>
       </Card>

@@ -1,0 +1,13 @@
+.card {
+    cursor: pointer;
+}
+
+.cardBody {
+    display: flex;
+    justify-content: space-between
+}
+
+.cardEditBtn,
+.cardDeleteBbtn {
+    margin-left: 10px;
+}
