@@ -1,0 +1,26 @@
+.searchBar {
+    display: flex;
+    align-items: center;
+}
+
+.createBtn {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background: var(--coral);
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    justify-content: center;
+    margin-left: 1vw;
+}
+
+.divider {
+    width: 100%;
+    height: min-content;
+    stroke: var(--coral);
+    padding: 1%;
+    border: 1px solid #eaeef5;
+}

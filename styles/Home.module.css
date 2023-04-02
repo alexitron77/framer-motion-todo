@@ -44,7 +44,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
   max-width: 800px;
   margin-top: 3rem;
 }
@@ -64,8 +63,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: var(--coral);
+  border-color: var(--coral);
 }
 
 .card h3 {

@@ -10,7 +10,7 @@ const CardContainerComponent = () => {
 
     return (
 
-        <div className="todo-container">
+        <div className={styles.todoContainer}>
             <Reorder.Group values={todoList} onReorder={setTodoList}>
                 {todoList.map(todo =>
                     <AnimatePresence>

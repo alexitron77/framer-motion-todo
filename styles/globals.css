@@ -4,6 +4,10 @@ body {
   margin: 0;
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --coral: #ff7f50;
+  --coral-rgba-30: rgb(255, 127, 80, 0.3);
+  --coral-rgba-40: rgb(255, 127, 80, 0.4);
+  --white: #ffffff;
 }
 
 a {
